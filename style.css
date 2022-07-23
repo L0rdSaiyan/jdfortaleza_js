@@ -1,0 +1,64 @@
+.bloco-pai h3{
+
+
+        margin-top: 80px;    
+        text-align: center;
+
+
+}
+
+#bloco1{
+
+display: flex;
+justify-content: center;
+position: fixed;
+border-radius: 5px;
+width: 200px;
+height: 200px;
+margin-left: 200px;
+margin-top: 150px;
+background-color: red;
+transition: all .2s .1s linear;
+text-shadow: 5px 4px black;
+
+}
+
+
+
+
+#bloco1:hover{
+
+    letter-spacing: 3px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+}
+
+
+
+#bloco2{
+
+display: flex;
+justify-content: center;
+position: fixed;
+margin-left: 500px;
+margin-top: 150px;
+background-color: red;
+border-radius: 3px;
+width: 200px;
+height: 200px;
+
+}
+
+#bloco3{
+
+ display: flex;
+ position: fixed;
+ margin-left: 850px;
+ margin-top: 150px;
+ justify-content: center;
+ width: 200px;
+ height: 200px;
+ background-color: red;
+
+}
