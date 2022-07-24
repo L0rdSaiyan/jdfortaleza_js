@@ -1,19 +1,28 @@
-let numero = window.parseInt(prompt("Informe o número: "));
 
-while(isNaN(numero)){
 
-window.alert("O número informado não é um valor válido!");
-numero = window.parseInt(prompt("Informe o número: "));
+function bruh(){
 
-};
+ let conteudo = window.prompt("Informe o seu turno: ");
 
-function mostrarNumero(num){
+ if(conteudo.toLowerCase()=="m" || conteudo.toLowerCase() == "M-matutino"){
 
-sucessor = num+1;
-antecess = num-1;
-window.alert("O antecessor de "+numero+" é: "+antecess+" e o seu sucessor é: "+sucessor);
-document.write("O antecessor de "+numero+" é: "+antecess+" e o seu sucessor é: "+sucessor);
+  document.getElementById("resposta").innerHTML = "Bom dia ";
+
+ }else if(conteudo.toLowerCase()=="v" || conteudo.toLowerCase()=="V-Vespertino"){
+
+  document.getElementById("resposta").innerHTML = "Boa tarde!";
+
+  }else if(conteudo.toLowerCase()=="n" || conteudo.toLowerCase() ==  "N- Noturno" ){
+
+    document.getElementById("resposta").innerHTML = "Boa noite";
+
+  }else{
+
+     document.getElementById("resposta").innerHTML = "Resposta inválida!"
+
+  }
+
+
+
 
 }
-
-mostrarNumero(numero);

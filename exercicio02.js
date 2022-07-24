@@ -1,8 +1,23 @@
-function mostrarNumero(){
+function mostrarNum(){
 
-let numero = window.prompt("Informe um número:");
-window.alert("O número informado foi: "+numero);
-document.write("O número informado foi: "+numero);
-};
+let n1 = window.parseInt(prompt("Informe o primeiro número: "));
 
-mostrarNumero();
+while(isNaN(n1)){
+
+window.alert("O valor informado não é um número!");
+n1 = window.parseInt.prompt("Informe o primeiro número: ");
+
+}
+
+if(n1>0){
+
+document.getElementById("resultado").innerHTML = `O número ${n1} é um número positivo!`
+
+}else{
+
+document.getElementById("resultado").innerHTML = `O número ${n1} é um número negativo!`
+
+}
+
+
+}

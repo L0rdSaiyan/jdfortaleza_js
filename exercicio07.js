@@ -1,13 +1,54 @@
-let tamanhoArquivo = window.parseInt(prompt("Qual o tamanho do arquivo?: "));
-let velocidadeInternet = window.parseInt(prompt("Qual a velocidade da sua internet: "));
+function menorNum(){
 
-//FUNÇÃO PARA CALCULAR O TEMPO DE DOWNLOAD.
-function tempoDownload(tamanho,velocidade){
+    let n1 = window.parseInt(prompt("Informe o primeiro número: ")) 
+    
+    while(isNaN(n1))
+    {
+    
+    window.alert("O valor informado")
+    n1 = window.parseInt(prompt("Informe o primeiro número: ")) 
+    
+    }
+    
+    let n2 = window.parseInt(prompt("Informe o segundo número: ")) 
+    
+    while(isNaN(n2))
+    {
+    
+    window.alert("O valor informado")
+    n2 = window.parseInt(prompt("Informe o segundo número: ")) 
+    
+    
+    }
+    
+    let n3 = window.parseInt(prompt("Informe o terceiro número: ")) 
+    
+    while(isNaN(n3))
+    {
+    
+    window.alert("O valor informado")
+    n3 = window.parseInt(prompt("Informe o terceiro número: ")) 
+    
+    }
+    
+    
+    if(n1<n2 && n1<n3){
+    
+     document.getElementById("resultado").innerHTML = `O menor número é ${n1}`
+    
+    }else if(n2<n1 && n2<n3){
+    
+       document.getElementById("resultado").innerHTML = `O menor número é ${n2}`
+    
+    }else if(n3<n1 && n3<n2){
+    
+       document.getElementById("resultado").innerHTML = `O menor número é: ${n3}`
+    
+    }else{
+    
+       document.getElementById("resultado").innerHTML = `Ambos os números são iguais! (${n1} ${n2} ${n3})`
+    
+    }
+    
 
-tempoDownload = tamanho/(velocidade/8);
-window.alert("O tempo de download do arquivo é de aproximandamente: "+tempoDownload);
-document.write("O tempo de downlaod do arquivo é de aproximadamente: "+tempoDownload);
-
-};
-
-tempoDownload(tamanhoArquivo,velocidadeInternet);
+    }

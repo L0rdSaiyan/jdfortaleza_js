@@ -1,10 +1,46 @@
-let nome = window.prompt("Informe o seu nome: ");
+function media()
+{
 
-function boaNoite(name){
+let n1 = window.parseFloat(prompt("Informe a primeira nota parcial do aluno: "))
 
-  window.alert("Boa noite, "+nome);
-  document.write("Boa noite, " +nome);
+while(isNaN(n1))
+{
 
-};
+ alert("O valor informado não é um valor válido!");
+ n1 = window.parseFloat(prompt("Informe a primeira nota parcial do aluno: "))
 
-boaNoite(nome);
+}
+
+let n2 = window.parseFloat(prompt("Informe a segunda nota parcial do aluno: "))
+
+while(isNaN(n2))
+{
+
+alert("O valor informado não é um valor válido!")
+n2 = window.parseFloat(prompt("Informe a segunda nota parcial do aluno: "))
+
+}
+
+
+let result = (n1+n2)/2
+
+if(result>=10)
+{
+
+ document.getElementById("resposta").innerHTML = `Aprovado com distinção! ${result} `
+
+}else if(result<7)
+{
+
+    document.getElementById("resposta").innerHTML = `Reprovado ${result}`
+
+}else if(result>=7)
+{
+
+    document.getElementById("resposta").innerHTML = `Aprovado ${result}`
+
+}
+
+
+
+}

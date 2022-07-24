@@ -1,24 +1,55 @@
-let num1 = window.parseInt(prompt("Informe o primeiro número: "));
+function maiorNum(){
 
-while(isNaN(num1)){
-window.alert("O valor inserido não é um número válido! Insira um valor válido.");
-num1 = window.parseInt(prompt("Informe o primeiro número"))
+let n1 = window.parseInt(prompt("Informe o primeiro número:"))
 
-};
 
-let num2 = window.parseInt(prompt("Informe o segundo número: "));
+while(isNaN(n1)){
 
-while(isNaN(num2)){
+    alert("O valor informado não é um número!")
+    n1 = window.parseInt(prompt("Informe o primeiro número:")) 
 
-window.alert("O valor inserido não é um número válido! Insira um valor válido!");
-num2 = window.parseInt(prompt("Informe o segundo número: "));
+}
 
-};
 
-//FUNÇÃO QUE SOMA OS NÚMEROS 
-function somarNumeros(n1,n2){
-soma = n1+n2;
-window.alert("A soma dos números é: "+soma);
-document.write("A soma dos números é: "+soma);
-};
-somarNumeros(num1,num2);
+let n2 = window.parseInt(prompt("Informe o segundo número:"))
+
+while(isNaN(n2)){
+
+    alert("O valor informado não é um número!")
+    n2 = window.parseInt(prompt("Informe o segundo número:"))
+
+}
+
+
+let n3 = window.parseInt(prompt("Informe o primeiro número:"))
+
+
+while(isNaN(n3)){
+
+    alert("O valor informado não é um número!");
+    n3 = window.parseInt(prompt("Informe o terceiro número:"));
+
+}
+
+    if(n1>n2 && n1>n3){
+
+   document.getElementById("resposta").innerHTML = `O maior número é: ${n1}`
+  
+    }else if(n2>n1 && n2>n3){
+
+    document.getElementById("resposta").innerHTML = `O maior número é: ${n2}`
+
+    }else if(n3>n1 && n3>n2){
+
+    document.getElementById("resposta").innerHTML = `O maior número é: ${n3}`
+
+    }else{
+
+    document.getElementById("resposta").innerHTML = `Os números inseridos (${n1}, ${n2} e ${n3}) são iguais.`
+
+
+    }
+
+
+
+}
