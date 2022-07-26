@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 04</title>
+    <script src="atividade04.js"></script>
+    <style>
+
+    #input{
+        
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #salario{
+
+        border: 1px solid red;
+        padding: 10px 12px;
+
+    }
+
+    #btn{
+
+        margin-left: 620px;
+        margin-top: 20px;
+        background-color: transparent;
+        padding: 10px 12px;
+        border: 1px solid red;
+        transition: 200ms;
+
+    }
+
+    #btn:hover{
+
+        text-decoration: underline;
+        cursor: pointer;
+        background-color: red;
+        color: white;
+        letter-spacing: 1px;
+
+    }
+
+    .output{
+
+        margin-left: 50%;
+        color: red;
+
+    }
+
+
+    </style>
+
+
+
+</head>
+<body>
+    
+    <h1>Atividade 04</h1>
+    <p style="text-align:center;">Informe o salário do contribuidor:</p>
+  
+    <div id="input">
+    <input id="salario" type="number">
+   </div>
+   <div id="input2">
+    <button id="btn" onclick="reajusteSalario();" >Enviar</button>
+    </div>
+
+    <div class="output">
+    <p id="antes"></p>
+    <p id="percentual"></p>
+    <p id="aumento"></p>
+    <p id="novosalario"></p>
+    <h3 id="resposta"></h3>
+
+</div>
+
+</body>
+</html>
