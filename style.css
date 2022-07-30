@@ -1,0 +1,62 @@
+#formulario{
+
+text-align: center;
+margin-top: 120px;
+display: flex;
+justify-content: center;
+background-color: aqua;
+width: 300px;
+height: 300px;
+border: 1px solid black;
+border-radius: 3px;
+border-bottom: 10px solid red;
+margin-left: 500px;
+position: absolute;
+
+}
+
+#texto, #senha{
+
+    margin-left: 50px;
+    text-align: center;
+    margin-right: 40px;
+    border-color: black;
+    border-radius: 10px;
+    width: 190px;
+    height: 20px;
+
+
+}
+
+#texto{
+
+    margin-top: 100px;
+
+}
+
+
+#senha{
+
+    margin-top: 15px;
+
+}
+
+#enviar{
+
+    margin-top: 15px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: black;
+    transition: 200ms;
+    width: 80px;
+    height: 20px;
+
+}
+
+#enviar:hover{
+
+    background-color: greenyellow;
+    color: black;
+
+}
