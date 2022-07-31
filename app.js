@@ -1,16 +1,13 @@
-function enviarInfo(){
+function imprimirNum(){
 
-let nome = document.getElementById("texto").value
-let senha = document.getElementById("senha").value
-let confirmar = window.confirm(`Seu nome é: ${nome} e sua senha é: ${senha}?`)
+for(let num=1;num<=20; num++){
 
-    if(confirmar==true){
-
-        window.alert(`Login bem sucedido. Bem-vindo(a) ${nome}!`);
-
-    }else{
-
-        window.alert("Verifique suas informações e tente novamente.")
+    let elemento = document.getElementById("container") 
+    let paragrafo = document.createElement('p')
+    let conteudo = document.createTextNode(num)
+    paragrafo.appendChild(conteudo)
+    elemento.appendChild(paragrafo)
 
 }
+
 }
